@@ -6,3 +6,5 @@ Dnes 7. 10. 2026 jsme vytvořili lokální repozitář
 Editace repozitáře na GitHubu
 
 Zkouška editace na lokálu
+
+Zkouška editace na GitHubu
