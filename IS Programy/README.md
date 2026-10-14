@@ -1,0 +1,1 @@
+Tato složka IS **IS Programy** bude sloužit pro jednotlivé C# projekty.
