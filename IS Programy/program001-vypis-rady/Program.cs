@@ -15,7 +15,26 @@ while (again.ToLower() == "a")
     Console.WriteLine("***************************");
     Console.WriteLine("***************************");
 
+    // Vstup počáteční hodnoty
+    Console.Write("Zadejte první číslo řady (celé číslo): ");
+    int first;
+    while(!int.TryParse(Console.ReadLine(), out first)) {
+        Console.Write("Nezadali jste celé číslo. Zadejte první číslo řady znovu: ");
+    }
 
+    // Vstup koncové hodnoty
+    Console.Write("Zadejte poslední číslo řady (celé číslo): ");
+    int last;
+    while(!int.TryParse(Console.ReadLine(), out last)) {
+        Console.Write("Nezadali jste celé číslo. Zadejte poslední číslo řady znovu: ");
+    }
+
+    // Vstup diference s kontrolou kladného  nenulového čísla
+    Console.Write("Zadejte diferenci řady (kladné celé číslo): ");
+    int step;
+    while(!int.TryParse(Console.ReadLine(), out step) || step <= 0) {
+        Console.Write("Nezadali jste celé kladné číslo. Zadejte diferenci řady znovu: ");
+    }
     // Dotaz směrem k uživateli na opakování
     Console.WriteLine();
     Console.Write("Pro opakování programu stiskněte a. Následně potvrďte klávesou Enter: ");
