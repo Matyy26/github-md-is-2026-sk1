@@ -49,6 +49,20 @@ while (again.ToLower() == "a")
 
     //Zde budeme pokračovat s konkrétním algoritmem
     
+    //Deklarace a alokace pole v paměti v počítači
+    int[] myRandomNumbers = new int[n];
+
+    //Inicializace generátoru náhodných čísel
+    Random myRandomNumber = new Random();
+
+    //Generování náhodných čísel a jejich uložení do pole
+    Console.WriteLine("Vygenerovaná pseoudonáhodná čísla: ");
+    for (int i = 0; i < myRandomNumbers.Length; i++)
+    {
+        myRandomNumbers[i] = myRandomNumber.Next(lowerBound, upperBound + 1);
+        Console.Write($"{myRandomNumbers[i]} ");
+    }
+
 
     // Dotaz směrem k uživateli na opakování
     Console.WriteLine();
